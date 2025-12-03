@@ -29,6 +29,8 @@ body{
 a:hover{
     color: black;
     background-color: aliceblue;
+    border: 5px black solid;
+    font-size: 30px;
 }
 
 li{
