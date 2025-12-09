@@ -21,8 +21,8 @@ li a{
     background-color:none;
     text-align: center;
     text-decoration: none;
-    color: brown;
-    border: 2px black solid;
+    color: white;
+    border: 2px violet solid;
     font-size: 25px;
 }
 
@@ -35,7 +35,7 @@ a:hover{
 
 li{
     background-color: none;
-    display: row;
+    display: column;
     padding-left: 95px;
     font-size: 20px;
     margin-top: 25px;
