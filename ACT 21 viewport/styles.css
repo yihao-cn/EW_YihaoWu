@@ -1,0 +1,32 @@
+*{
+  margin: 0 ;
+  padding: 0;  
+}
+
+
+.contenedor {
+
+  width: 80vw;
+  height: 70vw; 
+  background-color: slategrey;   
+  margin: auto;
+}
+
+.cuadro1 {
+  width: 60vw; 
+  height: 30vw;
+  background-color: magenta;  
+
+}
+
+.cuadro2 {
+  width: 20vw;
+  height: 30vw; 
+  background-color: greenyellow;
+}
+
+.pie {
+  width: 80vw;
+  height: 10vw;
+  background-color: red;
+}
