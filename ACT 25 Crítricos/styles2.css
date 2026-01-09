@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    filter: grayscale(70%);
+    transition: filter 0.4s ease;
+}
+
+.item img:hover {
+    filter: grayscale(0%);
+}
+
+.item h3 {
+    margin-top: 15px;
+    font-family: 'Story Script', fantasy;
+    font-size: 1.8rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cta a {
+    text-decoration: none;
+    background-color: yellow;
+    color: purple;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 2px solid orange;
+    font-family: 'Story Script', fantasy;
+}
+
+.cta a:hover {
+    background-color: orange;
+    color: white;
+}

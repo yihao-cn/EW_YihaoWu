@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url("Fondo.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-link {
+    width: 60%;
+    color: lime;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.home-link h1 {
+    font-family: 'Story Script', fantasy;
+    font-size: 3rem;
+}
+
+.home-link:hover {
+    color: orange;
+}
+
+p {
+    color: white;
+    max-width: 600px;
+}
