@@ -32,7 +32,7 @@ padding: 25px;
 }
 
 nav {
-  background-color: orangered; 
+  background-color: #fe4934; 
   padding: 10px 0;
 }
 
@@ -93,7 +93,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 15px 10%;
-  color: orangered;
+  color: #fe4934;
 }
 
 footer p {
