@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.todo {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 2vw;
+    padding: 0;
+    margin-bottom: 3vw;
+}
+
+h1 {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+}
+
+h4 {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #feb236;
+}
+
+nav ul li {
+    padding-top: 1.5vh;
+    padding-bottom: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6vw;
+}
+
+nav ul li:hover {
+    background-color: #ff7b25;
+}
+
+.mapa {
+    display: block;
+    background-color: #6b5b95;
+    padding: 3vw;
+    margin-bottom: 3vh;
+}
+
+.mapa img {
+    width: 70vw;
+    transition: transform 0.3s ease;
+}
+
+.mapa:hover {
+    transform: scale(1.2);
+}
+
+.graficos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff7b25;
+    padding: 3vw;
+}
+
+.grafico {
+    width: 35vw;
+}
+
+.caja1 {
+    background-color: white;
+    padding: 1vw;
+    margin-bottom: 0.5vw; 
+}
+
+.caja1 img {
+    width: 100%;
+}
+
+.caja2 {
+    background-color: white;
+}
+
+.vermas {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+    .todo {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .mapa:hover {
+    transform: scale(1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: #d64161; 
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 3vw;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+    }
+
+
+    .carga,
+    .contenedores {
+        display: none;
+    }
+
+    .vermas {
+        display: block;
+    }
+
+    .graficos {
+        display: flex;
+        justify-content: space-between;
+        background-color: #6b5b95;
+    }
+
+    .mapa {
+        background-color: #feb236; 
+        padding: 4vw;
+    }
+
+    .mapa img {
+        width: 70vw;
+        transform: none;
+    }
+
+
+    .graficos {
+        flex-direction: column;
+        align-items: center;
+        padding: 6vw;
+    }
+
+    .grafico {
+        margin-bottom: 5vw;
+    }
+
+    nav ul li:hover {
+    background-color: transparent;
+}
+
+}
