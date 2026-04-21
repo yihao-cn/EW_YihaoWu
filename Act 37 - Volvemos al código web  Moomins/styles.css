@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+color: black;
+padding: 10vw;
+font-family: "forager", sans-serif;
+}
+
+h1 {
+  margin-bottom: 5vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 5vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+
+.gallery {
+  border: 3px solid orange;
+  padding: 3vw;
+  justify-content: center;
+  margin-bottom: 3vw;
+
+}
+
+.gallery:hover {
+  background-image: url("img/fondo.jpg");
+  background-size: cover; 
+  background-position: center;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+  width: 15vw;
+}
+
+.text-box {
+  background-color:orange;
+  padding: 2vw;
+  margin-bottom: 3vw;
+}
+
+.text-box h2 {
+  margin-bottom: 1vw;
+}
+
+footer {
+  border: 2px solid orange;
+  text-align: center;
+  padding: 1vw;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  h1 {
+    color: orange;
+  }
+
+  footer {
+    color: orange;
+  }
+
+  .gallery {
+    align-items: center;
+  }
+}
