@@ -1,0 +1,103 @@
+*{
+    background-color: cyan;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-row: auto auto auto;
+    background-color: darkcyan;
+    gap: 0.5vw;
+}
+.cuerpo div{
+    display: flex;
+}
+
+header{
+    color: darkblue;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 7vw;
+}
+
+.subitems{
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vw;
+    align-items: center;
+    border: 0.3em solid black;
+    background-color: aquamarine;
+}
+.sub1, .sub2, .sub3{
+    background-color: darkblue;
+    color: white;
+    border: 0.4em solid white;
+    width: 15vw;
+    height: 5vw;
+    padding: 0.3vw;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2{
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid black;
+    background-color: aquamarine;
+}
+
+.item3{
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid black;
+    background-color: aquamarine;
+}
+
+.item4{
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid black;
+    background-color: aquamarine;
+}
+
+.item5{
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid black;
+    background-color: aquamarine;
+}
+
+.item6{
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid black;
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .cuerpo{
+        grid-template-columns: 65% 35%;
+        grid-row: auto auto auto;
+    }
+
+    .subitems{
+        flex-direction: column;
+        background-color: cornflowerblue;
+    }
+
+    .item2, .item3, .item4, .item5, .item6{
+        background-color: cornflowerblue;
+    }
+}

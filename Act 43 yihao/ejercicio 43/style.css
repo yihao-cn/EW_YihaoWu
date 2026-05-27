@@ -1,0 +1,144 @@
+body{ margin: 2vw;
+    text-align: center;
+    display: grid;
+    font-family: nouvelle-vague, sans-serif;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "header nav nav nav"
+    "imagenes imagenes imagenes imagenes"
+    "banner banner banner banner"
+    "fotos fotos fotos texto"
+    "footer footer footer footer" ;
+    
+}
+
+header{
+    grid-area: header;
+}
+header img{
+    width: 100%;
+}
+
+nav{
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    padding: 1vw;
+}
+nav a{
+    color: blueviolet;
+}
+
+.imagenes{
+    grid-area: imagenes;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}   
+.imagenes div{
+    gap: 3vw;
+    padding: 1vw;
+}
+.imagenes img{
+    width: 100%;
+}  
+.imagenes p{
+    color: #65880f;
+}
+
+.banner{
+    background-color: #65880f;
+    grid-area: banner;
+}
+.banner p{
+    color: purple;
+    font-size: 2vw;
+    padding: 1vw;
+}
+.banner p:hover{
+    color: white;
+}
+.fotos{
+    margin-top: 3vw;
+    grid-area: fotos;
+    display: flex
+}
+
+.fotos img{
+    width: 40%;
+    padding: 1vw;
+}
+
+.v1{
+    padding: 1vw;
+    flex-direction: row;
+    width: 50%;
+}
+
+.v2{
+    padding: 1vw;
+    flex-direction: row;
+    width: 50%;
+}
+
+.texto{
+    grid-area: texto;
+    margin-top: 8vw;
+    padding: 1vw;
+    font-size: 2vw;
+    color: #65880f;
+}
+
+footer{
+    background-color: #65880f;
+    margin-top: 3vw;
+    padding: 7vw;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+}
+footer div{
+    font-family: none;
+    font-size: 1.5vw;
+    border: white solid 0.3vw;
+    padding: 3vw;
+}
+footer a{
+    color: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .imagenes{
+        margin-top: 10vw;
+        grid-template-columns: 100%;
+    }
+    .imagenes img{
+        width: 60%;
+    }
+    .imagenes p{
+        font-size: 3vw;
+    }
+
+    .fotos{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 25vw;
+    }
+
+    .texto{
+        display: none;
+    }
+    
+    footer{
+        flex-direction: column;
+        gap: 10vw;
+        
+    }
+    footer div{
+        padding: 3vw;
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+}
